@@ -1,5 +1,3 @@
-/* global $ */
-
 import React, { Component } from "react";
 import Header from "../Header/Header";
 import P5Wrapper from "../P5Wrapper/";
@@ -9,7 +7,7 @@ import PolySlider from '../../components/Poly/PolySlider'
 import PluckySlider from '../../components/Plucky/PluckySlider'
 import ArpeggiatorSlider from '../../components/Arpeggiator/ArpeggiatorSlider'
 import AmSlider from '../../components/Am/AmSlider'
-import { Button, Grid, Segment, Card } from 'semantic-ui-react'
+import { Grid, Segment } from 'semantic-ui-react'
 import '../../App.css'
 
 export default class App extends Component {
@@ -23,61 +21,40 @@ export default class App extends Component {
     }
   }
 
-
-
   componentDidMount = async () => {
-    document.title = 'Web Music'
-  
+    document.title = 'drum drum'
   }
-
 
   render() {
     return (
       <div>
-        
-          <div>
-
         <div className="header-container">
-
-
         </div>
-
         <h2 className="inst">Press Space to start the beat</h2>
         <h4 className="inst">You can click samples on and off for different patterns</h4>
-
-
-        <Header
-         />
-
-
-        <P5Wrapper
-          {...this.state.p5Props}
-        />
-
-<h4 className="inst">Try some sounds out... 
-you have to re-click the button to implement the effect slider</h4>
-
-
+        <Header />
+        <P5Wrapper {...this.state.p5Props} />
+        <h4 className="inst">Try some sounds out... you have to re-click the button to implement the effect slider</h4>
 
         <Grid columns='equal'>
           <Grid.Row>
             <Grid.Column>
               <Segment>
-                <MachineSlider 
+                <MachineSlider
                 />
-        
+
               </Segment>
             </Grid.Column>
             <Grid.Column>
               <Segment>
-                <TangoSlider 
-                 />
+                <TangoSlider
+                />
               </Segment>
             </Grid.Column>
             <Grid.Column>
               <Segment>
-                <PolySlider 
-               
+                <PolySlider
+
                 />
               </Segment>
             </Grid.Column>
@@ -86,21 +63,21 @@ you have to re-click the button to implement the effect slider</h4>
           <Grid.Row>
             <Grid.Column>
               <Segment>
-                <ArpeggiatorSlider 
-             
+                <ArpeggiatorSlider
+
                 />
               </Segment>
             </Grid.Column>
             <Grid.Column>
               <Segment>
-              <PluckySlider 
-               />
+                <PluckySlider
+                />
               </Segment>
             </Grid.Column>
             <Grid.Column>
               <Segment>
-              <AmSlider 
-               
+                <AmSlider
+
                 />
               </Segment>
             </Grid.Column>
@@ -117,10 +94,6 @@ you have to re-click the button to implement the effect slider</h4>
             </Grid.Column>
           </Grid.Row>
         </Grid>
-
-
-        </div>
-
 
       </div>
     );
