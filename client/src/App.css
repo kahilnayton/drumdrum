@@ -1,0 +1,14 @@
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+.inst {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: rgb(50, 50, 145);
+
+}
