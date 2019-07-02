@@ -1,19 +1,18 @@
 import React, { Component } from "react";
-import Header from "../Header/Header";
-import P5Wrapper from "../P5Wrapper/";
-import MachineSlider from '../../components/Machine/MachineSlider'
-import TangoSlider from '../../components/Tango/TangoSlider'
-import PolySlider from '../../components/Poly/PolySlider'
-import PluckySlider from '../../components/Plucky/PluckySlider'
-import ArpeggiatorSlider from '../../components/Arpeggiator/ArpeggiatorSlider'
-import AmSlider from '../../components/Am/AmSlider'
+import Header from "./components/Header/Header";
+import P5Wrapper from "./components/P5Wrapper";
+import MachineSlider from './components/Machine/MachineSlider'
+import TangoSlider from './components/Tango/TangoSlider'
+import PolySlider from './components/Poly/PolySlider'
+import PluckySlider from './components/Plucky/PluckySlider'
+import ArpeggiatorSlider from './components/Arpeggiator/ArpeggiatorSlider'
+import AmSlider from './components/Am/AmSlider'
 import { Grid, Segment } from 'semantic-ui-react'
-import '../../App.css'
+import './App.css'
 
 export default class App extends Component {
   constructor() {
     super();
-
     this.state = {
       p5Props: {
         status: "",
